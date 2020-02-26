@@ -140,16 +140,16 @@
 .slick-next {
   position: absolute;
   display: block;
-  height: 20px;
-  width: 20px;
+  width: 39px;
+  height: 28px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
   background: transparent;
   color: transparent;
   bottom: 0;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
   padding: 0;
   border: none;
   outline: none;
@@ -172,14 +172,10 @@
 }
 
 .slick-prev {
-  width: 39px;
-  height: 28px;
   background: url("../images/slider/arrow2.svg");
 }
 
 .slick-next {
-  width: 39px;
-  height: 28px;
   background: url("../images/slider/arrow.svg");
 }
 
@@ -582,7 +578,7 @@ body.lock {
 }
 
 .places .slider .slick-prev {
-  bottom: -78px;
+  bottom: -48px;
   left: 352px;
 }
 
@@ -594,7 +590,7 @@ body.lock {
 }
 
 .places .slider .slick-next {
-  bottom: -78px;
+  bottom: -48px;
   left: 453px;
 }
 

@@ -183,7 +183,7 @@ body {
     .slider {
         margin: 0 -202px 0 0;
         .slick-prev {
-            bottom: -78px;
+            bottom: -48px;
             left: 352px;
             @media(max-width: 1492px) {
                 left: calc(50% - 93px);
@@ -191,7 +191,7 @@ body {
             }
         }
         .slick-next {
-            bottom: -78px;
+            bottom: -48px;
             left: 453px;
             @media(max-width: 1492px) {
                 left: calc(50% + 60px);

@@ -69,61 +69,33 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
+    bottom: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     padding: 0;
     border: none;
     outline: none;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
     &:hover, &:focus {
         outline: none;
-        background: transparent;
-        color: transparent;
-        &:before {
-            opacity: $slick-opacity-on-hover;
-        }
+        opacity: 1;
     }
     &.slick-disabled:before {
         opacity: $slick-opacity-not-active;
     }
-    &:before {
-        font-family: $slick-font-family;
-        font-size: 20px;
-        line-height: 1;
-        color: $slick-arrow-color;
-        opacity: $slick-opacity-default;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
 }
 
 .slick-prev {
-    left: -25px;
-    [dir="rtl"] & {
-        left: auto;
-        right: -25px;
-    }
-    &:before {
-        content: $slick-prev-character;
-        [dir="rtl"] & {
-            content: $slick-next-character;
-        }
-    }
-}
+    width: 39px;
+    height: 28px;
+    background: url("../images/_slider/arrow2.svg");}
 
 .slick-next {
-    right: -25px;
-    [dir="rtl"] & {
-        left: -25px;
-        right: auto;
-    }
-    &:before {
-        content: $slick-next-character;
-        [dir="rtl"] & {
-            content: $slick-prev-character;
-        }
-    }
+    width: 39px;
+    height: 28px;
+    background: url("../images/_slider/arrow.svg");
 }
 
 /* Dots */

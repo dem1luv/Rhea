@@ -13,6 +13,7 @@ body {
     @media (max-width: 767px) {
         padding: 128px 0;
     }
+    overflow-x: hidden;
 }
 
 .container {
@@ -27,7 +28,6 @@ body {
     font-family: "Nunito Sans";
     font-size: 20px;
     font-weight: 600;
-    line-height: 57px;
     &.a {
         color: #3984f3;
         border: 3px solid #3984f3;
@@ -40,7 +40,7 @@ body {
     &.b {
         color: #ffffff;
         background-color: #3984f3;
-        padding: 6px 45px;
+        padding: 16px 45px;
         max-width: 220px;
         text-align: center;
         &:hover {
@@ -120,7 +120,7 @@ body {
     }
     &__text {
         width: 459px;
-        margin: 0 0 96px 0;
+        margin: 0 0 110px 0;
     }
     &__title {
         width: 514px;
@@ -128,22 +128,36 @@ body {
         font-family: "Nunito Sans";
         font-size: 75px;
         font-weight: 800;
-        margin: 0 0 60px 0;
+        margin: 0 0 54px 0;
     }
 }
 
 .places {
+    .container {
+        display: flex;
+    }
     &__left {
+        position: relative;
+        left: -326px;
     }
     &__slider {
     }
     .slider {
+        margin: 0 -202px 0 0;
+        .slick-prev {
+            bottom: -78px;
+            left: 352px;
+        }
+        .slick-next {
+            bottom: -78px;
+            left: 453px;
+        }
         max-width: 1230px;
         &__item {
             margin: 73px 19px 0 19px;
             min-width: 372px;
             transition: margin 0.5s ease;
-            &.slick-center {
+            &.slick-center[tabindex="0"] {
                 margin: 0 19px;
                 .slider__bottom {
                     opacity: 1;

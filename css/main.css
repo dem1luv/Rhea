@@ -156,6 +156,7 @@
   opacity: 0.5;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  background-color: #a0a0a0;
 }
 
 .slick-prev:hover, .slick-prev:focus,

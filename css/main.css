@@ -174,13 +174,13 @@
 .slick-prev {
   width: 39px;
   height: 28px;
-  background: url("../images/_slider/arrow2.svg");
+  background: url("../images/.slider/arrow2.svg");
 }
 
 .slick-next {
   width: 39px;
   height: 28px;
-  background: url("../images/_slider/arrow.svg");
+  background: url("../images/.slider/arrow.svg");
 }
 
 /* Dots */

@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   background-color: #ECEFF1;
+  z-index: 50;
 }
 
 @media (max-width: 767px) {

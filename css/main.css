@@ -577,6 +577,12 @@ body.lock {
   max-width: 1230px;
 }
 
+@media (max-width: 1492px) {
+  .places .slider {
+    margin: 0 auto 25px auto;
+  }
+}
+
 .places .slider .slick-prev {
   bottom: -48px;
   left: 352px;
@@ -598,12 +604,6 @@ body.lock {
   .places .slider .slick-next {
     left: calc(50% + 60px);
     bottom: -20px;
-  }
-}
-
-@media (max-width: 1492px) {
-  .places .slider {
-    margin: 0 auto;
   }
 }
 
@@ -716,6 +716,8 @@ body.lock {
 
 .places .slider__rating img {
   margin: 0 7px 0 0;
+  width: 22px;
+  height: 22px;
 }
 
 .places .slider__rating img:last-child {

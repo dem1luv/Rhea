@@ -182,6 +182,10 @@ body {
     }
     .slider {
         margin: 0 -202px 0 0;
+        max-width: 1230px;
+        @media (max-width: 1492px) {
+            margin: 0 auto 25px auto;
+        }
         .slick-prev {
             bottom: -48px;
             left: 352px;
@@ -197,10 +201,6 @@ body {
                 left: calc(50% + 60px);
                 bottom: -20px;
             }
-        }
-        max-width: 1230px;
-        @media (max-width: 1492px) {
-            margin: 0 auto;
         }
         &__item {
             margin: 73px 19px 0 19px;
@@ -270,6 +270,8 @@ body {
             display: flex;
             img {
                 margin: 0 7px 0 0;
+                width: 22px;
+                height: 22px;
                 &:last-child {
                     margin: 0;
                 }

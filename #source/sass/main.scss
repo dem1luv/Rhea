@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+@import "burger";
+@import "slider";
+@import "zerostyle";
+
+body {
+    font-family: "Nunito Sans";
+    overflow-x: hidden;
+    &.lock {
+        overflow-y: hidden;
+    }
+    @media (max-width: 767px) {
+        padding: 128px 0;
+    }
+}
+
+.container {
+    max-width: 1630px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.sign-in {
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 57px;
+    &.a {
+        color: #3984f3;
+        border: 3px solid #3984f3;
+        padding: 12px 45px;
+        &:hover {
+            color: #ffffff;
+            background-color: #3984f3;
+        }
+    }
+    &.b {
+        color: #ffffff;
+        background-color: #3984f3;
+        padding: 6px 45px;
+        max-width: 220px;
+        text-align: center;
+        &:hover {
+            background-color: #234982;
+        }
+    }
+}
+
+.text {
+    color: #81858e;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.title {
+
+}
+
+.header {
+    margin: 71px 0 95px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1023px) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        display: inline;
+        margin: 0 60px 0 0;
+        &:last-child {
+            margin: 0
+        }
+    }
+    &__link {
+        transition: color 0.3s ease, 
+                    font-weight 0.3s ease;
+        color: #bab8b8 !important;
+        font-family: "Nunito";
+        font-size: 20px;
+        &:hover {
+            color: #4497f3 !important;
+        }
+    }
+    &__logo {
+        @media (max-width: 1023px) {
+            margin: 0 auto 20px auto;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &__nav {
+        ul {
+            display: inline-block;
+        }
+        @media (max-width: 1023px) {
+            margin: 0 auto;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.home {
+    background: url("../images/home/01.png") 100% 100% no-repeat;
+    margin: 0 0 163px 0;
+    .container {
+        height: 998px;
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        flex-direction: column;
+
+    }
+    &__text {
+        width: 459px;
+        margin: 0 0 96px 0;
+    }
+    &__title {
+        width: 514px;
+        color: #091e40;
+        font-family: "Nunito Sans";
+        font-size: 75px;
+        font-weight: 800;
+        margin: 0 0 60px 0;
+    }
+}
+
+.places {
+    &__left {
+    }
+    &__slider {
+    }
+    .slider {
+        max-width: 1230px;
+        &__item {
+            margin: 73px 19px 0 19px;
+            min-width: 372px;
+            transition: margin 0.5s ease;
+            &.slick-center {
+                margin: 0 19px;
+                .slider__bottom {
+                    opacity: 1;
+                }
+            }
+        }
+        &__block {
+            height: 500px;
+            margin: 0 0 21px 0;
+            background: url("../images/places/03.png") 100% 100% no-repeat;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        &__bottom {
+            transition: opacity 0.5s ease;
+            display: flex;
+            opacity: 0;
+            justify-content: space-between;
+        }
+        &__date {
+            color: #a0a0a0;
+            font-family: "Nunito Sans";
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.24px;
+        }
+        &__name {
+            color: #ffffff;
+            font-family: "Nunito Sans";
+            font-size: 23px;
+            letter-spacing: 0.23px;
+            margin: 0 25px 26px 25px;
+        }
+        &__price {
+            color: #ffffff;
+            font-family: "Nunito Sans";
+            font-size: 24px;
+            font-weight: 600;
+            background-color: #3984f3;
+            padding: 10px 30px;
+            margin: 31px 0 0 0;
+            align-self: flex-start;
+        }
+        &__rating {
+            display: flex;
+            img {
+                margin: 0 7px 0 0;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &__right {
+    }
+    &__title {
+    }
+    &__text {
+    }
+    &__button {
+    }
+}

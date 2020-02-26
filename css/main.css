@@ -375,7 +375,8 @@ body.lock {
   color: #ffffff;
   background-color: #3984f3;
   padding: 16px 45px;
-  max-width: 220px;
+  min-width: 220px;
+  display: inline-block;
   text-align: center;
 }
 
@@ -383,15 +384,46 @@ body.lock {
   background-color: #234982;
 }
 
+@media (max-width: 528px) {
+  .sign-in.b {
+    width: 100%;
+  }
+}
+
 .text {
   color: #81858e;
   font-family: "Nunito Sans";
   font-size: 22px;
-  line-height: 35px;
+  line-height: 42px;
+}
+
+.title {
+  color: #091e40;
+  font-family: "Nunito Sans";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 62px;
+}
+
+.title:after {
+  bottom: -34px;
+  left: calc(50% - 49px);
+  position: relative;
+  content: "";
+  display: block;
+  width: 78px;
+  height: 6px;
+  background-color: #3984f3;
 }
 
 .header {
   margin: 71px 0 95px 0;
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin: 0;
+  }
 }
 
 .header .container {
@@ -445,6 +477,12 @@ body.lock {
   }
 }
 
+.header__nav {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .header__nav ul {
   display: inline-block;
 }
@@ -483,17 +521,30 @@ body.lock {
 }
 
 .home__text {
-  width: 459px;
-  margin: 0 0 110px 0;
+  max-width: 459px;
+  line-height: 35px;
+  margin: 0 0 93px 0;
 }
 
 .home__title {
-  width: 514px;
+  max-width: 514px;
   color: #091e40;
   font-family: "Nunito Sans";
   font-size: 75px;
   font-weight: 800;
   margin: 0 0 54px 0;
+}
+
+@media (max-width: 528px) {
+  .home__title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 367px) {
+  .home__title {
+    font-size: 42px;
+  }
 }
 
 .places .container {
@@ -502,9 +553,25 @@ body.lock {
   display: flex;
 }
 
+@media (max-width: 1492px) {
+  .places .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .places__left {
   position: relative;
   left: -326px;
+}
+
+@media (max-width: 1492px) {
+  .places__left {
+    left: 0;
+    margin: 0 0 60px 0;
+  }
 }
 
 .places .slider {
@@ -517,9 +584,29 @@ body.lock {
   left: 352px;
 }
 
+@media (max-width: 1492px) {
+  .places .slider .slick-prev {
+    left: calc(50% - 93px);
+    bottom: -20px;
+  }
+}
+
 .places .slider .slick-next {
   bottom: -78px;
   left: 453px;
+}
+
+@media (max-width: 1492px) {
+  .places .slider .slick-next {
+    left: calc(50% + 60px);
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 1492px) {
+  .places .slider {
+    margin: 0 auto;
+  }
 }
 
 .places .slider__item {
@@ -535,6 +622,14 @@ body.lock {
 
 .places .slider__item.slick-center[tabindex="0"] .slider__bottom {
   opacity: 1;
+}
+
+@media (max-width: 509px) {
+  .places .slider__item {
+    min-width: 0;
+    width: 240px;
+    margin: 73px 19px 0 19px;
+  }
 }
 
 .places .slider__block {
@@ -553,6 +648,13 @@ body.lock {
           flex-direction: column;
 }
 
+@media (max-width: 509px) {
+  .places .slider__block {
+    height: 350px;
+    margin: 0 0 8px 0;
+  }
+}
+
 .places .slider__bottom {
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
@@ -565,12 +667,27 @@ body.lock {
           justify-content: space-between;
 }
 
+@media (max-width: 509px) {
+  .places .slider__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .places .slider__date {
   color: #a0a0a0;
   font-family: "Nunito Sans";
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.24px;
+}
+
+@media (max-width: 509px) {
+  .places .slider__date {
+    text-align: center;
+  }
 }
 
 .places .slider__name {
@@ -605,5 +722,38 @@ body.lock {
 
 .places .slider__rating img:last-child {
   margin: 0;
+}
+
+@media (max-width: 509px) {
+  .places .slider__rating img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 509px) {
+  .places .slider__rating {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 0 7px 0;
+  }
+}
+
+.places__right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.places__title {
+  margin: 0 0 85px 0;
+}
+
+.places__title:after {
+  left: 0;
+}
+
+.places__text {
+  margin: 0 0 48px 0;
 }
 /*# sourceMappingURL=main.css.map */

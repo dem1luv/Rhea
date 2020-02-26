@@ -41,10 +41,14 @@ body {
         color: #ffffff;
         background-color: #3984f3;
         padding: 16px 45px;
-        max-width: 220px;
+        min-width: 220px;
+        display: inline-block;
         text-align: center;
         &:hover {
             background-color: #234982;
+        }
+        @media(max-width: 528px) {
+            width: 100%;
         }
     }
 }
@@ -53,15 +57,32 @@ body {
     color: #81858e;
     font-family: "Nunito Sans";
     font-size: 22px;
-    line-height: 35px;
+    line-height: 42px;
 }
 
 .title {
-
+    color: #091e40;
+    font-family: "Nunito Sans";
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 62px;
+    &:after {
+        bottom: -34px;
+        left: calc(50% - 49px);
+        position: relative;
+        content: "";
+        display: block;
+        width: 78px;
+        height: 6px;
+        background-color: #3984f3;
+    }
 }
 
 .header {
     margin: 71px 0 95px 0;
+    @media (max-width: 767px) {
+        margin: 0;
+    }
     .container {
         display: flex;
         justify-content: space-between;
@@ -95,6 +116,7 @@ body {
         }
     }
     &__nav {
+        align-self: center;
         ul {
             display: inline-block;
         }
@@ -119,26 +141,42 @@ body {
 
     }
     &__text {
-        width: 459px;
-        margin: 0 0 110px 0;
+        max-width: 459px;
+        line-height: 35px;
+        margin: 0 0 93px 0;
     }
     &__title {
-        width: 514px;
+        max-width: 514px;
         color: #091e40;
         font-family: "Nunito Sans";
         font-size: 75px;
         font-weight: 800;
         margin: 0 0 54px 0;
+        @media(max-width: 528px) {
+            font-size: 50px;
+        }
+        @media(max-width: 367px) {
+            font-size: 42px;
+        }
+    }
+    &__button {
     }
 }
 
 .places {
     .container {
         display: flex;
+        @media(max-width: 1492px) {
+            flex-direction: column;
+        }
     }
     &__left {
         position: relative;
         left: -326px;
+        @media(max-width: 1492px) {
+            left: 0;
+            margin: 0 0 60px 0;
+        }
     }
     &__slider {
     }
@@ -147,12 +185,23 @@ body {
         .slick-prev {
             bottom: -78px;
             left: 352px;
+            @media(max-width: 1492px) {
+                left: calc(50% - 93px);
+                bottom: -20px;
+            }
         }
         .slick-next {
             bottom: -78px;
             left: 453px;
+            @media(max-width: 1492px) {
+                left: calc(50% + 60px);
+                bottom: -20px;
+            }
         }
         max-width: 1230px;
+        @media (max-width: 1492px) {
+            margin: 0 auto;
+        }
         &__item {
             margin: 73px 19px 0 19px;
             min-width: 372px;
@@ -163,6 +212,11 @@ body {
                     opacity: 1;
                 }
             }
+            @media(max-width: 509px) {
+                min-width: 0;
+                width: 240px;
+                margin: 73px 19px 0 19px;
+            }
         }
         &__block {
             height: 500px;
@@ -171,12 +225,19 @@ body {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            @media(max-width: 509px) {
+                height: 350px;
+                margin: 0 0 8px 0;
+            }
         }
         &__bottom {
             transition: opacity 0.5s ease;
             display: flex;
             opacity: 0;
             justify-content: space-between;
+            @media(max-width: 509px) {
+                flex-direction: column;
+            }
         }
         &__date {
             color: #a0a0a0;
@@ -184,6 +245,9 @@ body {
             font-size: 24px;
             font-weight: 600;
             letter-spacing: 0.24px;
+            @media(max-width: 509px) {
+                text-align: center;
+            }
         }
         &__name {
             color: #ffffff;
@@ -209,14 +273,28 @@ body {
                 &:last-child {
                     margin: 0;
                 }
+                @media(max-width: 509px) {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            @media(max-width: 509px) {
+                justify-content: space-around;
+                margin: 0 0 7px 0;
             }
         }
     }
     &__right {
+        align-self: center;
     }
     &__title {
+        &:after {
+            left: 0;
+        }
+        margin: 0 0 85px 0;
     }
     &__text {
+        margin: 0 0 48px 0;
     }
     &__button {
     }

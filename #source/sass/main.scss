@@ -397,9 +397,12 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            padding: 0 0 29px 53px;
+            padding: 0 53px 29px 53px;
             background: url("../images/videoplayer/play.svg") 50% 50% no-repeat,
                         url("../images/videos/01.png") 100% 100% no-repeat;
+            @media(max-width: 412px) {
+                padding: 0 30px 20px 30px;
+            }
             &.hidden {
                 display: none;
             }            
@@ -409,12 +412,18 @@ body {
                 font-size: 35px;
                 font-weight: 600;
                 padding: 0 0 17px 0;
+                @media(max-width: 412px) {
+                    font-size: 28px;
+                }
             }
             &-time {
                 opacity: 0.7;
                 color: #ffffff;
                 font-family: "Nunito Sans";
                 font-size: 26px;
+                @media(max-width: 412px) {
+                    font-size: 21px;
+                }
             }
         }
         &__left {
@@ -430,6 +439,9 @@ body {
                 height: 400px;
                 margin: 15px 0 0 0;
             }
+            @media(max-width: 449px) {
+                height: 250px;
+            }
         }
         &__text {
             padding: 0 0 0 18px;
@@ -440,6 +452,9 @@ body {
             color: #091e40;
             font-family: "Nunito Sans";
             font-size: 20px;
+            @media(max-width: 412px) {
+                font-size: 19px;
+            }
         }
         &__title {
             color: #091e40;

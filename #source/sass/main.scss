@@ -207,7 +207,7 @@ body {
             bottom: -48px;
             left: 352px;
             @media(max-width: 1492px) {
-                left: calc(50% - 93px);
+                left: calc(50% - 75px);
                 bottom: -20px;
             }
         }
@@ -215,7 +215,7 @@ body {
             bottom: -48px;
             left: 453px;
             @media(max-width: 1492px) {
-                left: calc(50% + 60px);
+                left: calc(50% + 32px);
                 bottom: -20px;
             }
         }
@@ -486,6 +486,7 @@ body {
 }
 
 .travel {
+    margin: 0 0 303px 0;
     &__top {
         margin: 0 0 110px 0;
         @media(max-width: 599px) {
@@ -507,15 +508,15 @@ body {
         max-width: 1920px;
         margin: 0 auto;
         .slick-prev {
-            left: calc(50% - 93px);
-            bottom: -120px;
+            left: calc(50% - 75px);
+            bottom: -54px;
             @media(max-width: 767px) {
                 bottom: -35px;
             }
         }
         .slick-next {
-            left: calc(50% + 60px);
-            bottom: -120px;
+            left: calc(50% + 32px);
+            bottom: -54px;
             @media(max-width: 767px) {
                 bottom: -35px;
             }
@@ -554,3 +555,60 @@ body {
     }
 }
 
+.reviews {
+    &__title {
+        margin: 0 0 105px 0;
+    }
+    &__slider {
+    }
+    .slider {
+        .slick-prev {
+            bottom: 70px;
+            left: calc(50% - 271px);
+            z-index: 49;
+            @media(max-width: 599px) {
+                left: 0;
+            }
+        }
+        .slick-next {
+            bottom: 70px;
+            left: calc(50% + 232px);
+            z-index: 49;
+            @media(max-width: 599px) {
+                left: calc(100% - 39px);
+            }
+        }
+        max-width: 1060px;
+        margin: 0 auto;
+        &__img {
+            width: 105px;
+            height: 106px;
+            margin: 0 0 35px;
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__name {
+            color: #2b323a;
+            font-family: "Nunito Sans";
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+        }
+        &__occupation {
+            color: #2b323a;
+            font-family: "Nunito Sans";
+            font-size: 20px;
+        }
+        &__text {
+            color: #091e40;
+            font-family: "Nunito Sans";
+            font-size: 26px;
+            line-height: 50px;
+            text-align: center;
+            margin: 0 0 75px 0;
+        }
+    }
+}

@@ -48,6 +48,11 @@ $(document).ready(function(){
 		centerMode: true,
 		variableWidth: true,
 	});
+	$('.reviews__slider').slick({
+		sslidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+	});
 });
 
 //videoplayer

@@ -369,7 +369,6 @@ body {
         }
         &__right {
             overflow-y: scroll;
-            height: 603px;
             width: 547px;
             padding: 0 15px;
         }
@@ -393,6 +392,8 @@ body {
         }
         &__video {
             width: 1072px;
+            height: 594px;
+            object-fit: cover;
         }
     }
 }

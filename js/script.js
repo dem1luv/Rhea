@@ -46,5 +46,6 @@ $(document).ready(function(){
 
 //videoplayer
 $(".list__item").click(function(){
-	$(".list__video").attr("src", "videos/" + $(this).attr("data-fileName")); 
+	$(".list__video").attr("src", "videos/" + $(this).attr("data-video"));
+	$(".list__video").attr("poster", "images/videos/" + $(this).attr("data-poster")); 
 });

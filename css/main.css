@@ -1034,4 +1034,97 @@ body.lock {
     width: 100%;
   }
 }
+
+.travel__top {
+  margin: 0 0 110px 0;
+}
+
+@media (max-width: 599px) {
+  .travel__top {
+    margin: 0 0 90px 0;
+  }
+}
+
+.travel__title {
+  margin: 0 0 80px 0;
+}
+
+.travel__text {
+  max-width: 1202px;
+  margin: 0 auto;
+}
+
+.travel .slider {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.travel .slider .slick-prev {
+  left: calc(50% - 93px);
+  bottom: -120px;
+}
+
+@media (max-width: 767px) {
+  .travel .slider .slick-prev {
+    bottom: -35px;
+  }
+}
+
+.travel .slider .slick-next {
+  left: calc(50% + 60px);
+  bottom: -120px;
+}
+
+@media (max-width: 767px) {
+  .travel .slider .slick-next {
+    bottom: -35px;
+  }
+}
+
+.travel .slider__item {
+  width: 472px;
+  height: 500px;
+  margin: 59px 17px;
+  -webkit-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../images/travel/01.png") 100% 100% no-repeat;
+}
+
+@media (max-width: 599px) {
+  .travel .slider__item {
+    min-width: 0;
+    width: 360px;
+  }
+}
+
+@media (max-width: 479px) {
+  .travel .slider__item {
+    width: 250px;
+    height: 350px;
+    margin: 59px 8px;
+  }
+}
+
+.travel .slider__item.slick-center[tabindex="0"] {
+  margin: 0 17px;
+}
+
+@media (max-width: 479px) {
+  .travel .slider__item.slick-center[tabindex="0"] {
+    margin: 0 8px;
+  }
+}
+
+.travel .slider__text {
+  color: #ffffff;
+  font-family: "Nunito Sans";
+  font-size: 28px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0 41px 35px 41px;
+}
 /*# sourceMappingURL=main.css.map */

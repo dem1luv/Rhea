@@ -42,6 +42,12 @@ $(document).ready(function(){
 		centerMode: true,
 		variableWidth: true,
 	});
+	$('.travel__slider').slick({
+		sslidesToShow: 5,
+		slidesToScroll: 1,
+		centerMode: true,
+		variableWidth: true,
+	});
 });
 
 //videoplayer

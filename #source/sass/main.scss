@@ -80,6 +80,19 @@ body {
     }
 }
 
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    background-color: #d9d9d9;
+}
+/*--------*/
+
 .header {
     margin: 71px 0 95px 0;
     @media (max-width: 767px) {

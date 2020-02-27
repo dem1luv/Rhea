@@ -43,3 +43,8 @@ $(document).ready(function(){
 		variableWidth: true,
 	});
 });
+
+//videoplayer
+$(".list__item").click(function(){
+	$(".list__video").attr("src", "videos/" + $(this).attr("data-fileName")); 
+});

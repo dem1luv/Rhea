@@ -58,6 +58,7 @@ body {
     font-family: "Nunito Sans";
     font-size: 22px;
     line-height: 42px;
+    text-align: center;
 }
 
 .title {
@@ -66,6 +67,7 @@ body {
     font-size: 50px;
     font-weight: 600;
     line-height: 62px;
+    text-align: center;
     &:after {
         bottom: -34px;
         left: calc(50% - 39px);
@@ -144,6 +146,7 @@ body {
         max-width: 459px;
         line-height: 35px;
         margin: 0 0 93px 0;
+        text-align: left;
     }
     &__title {
         max-width: 514px;
@@ -295,6 +298,7 @@ body {
         }
     }
     &__title {
+        text-align: left;
         &:after {
             left: 0;
         }
@@ -308,6 +312,7 @@ body {
     }
     &__text {
         margin: 0 0 48px 0;
+        text-align: left;
         @media(max-width: 1492px) {
             max-width: 1202px;
             text-align: center;
@@ -326,3 +331,68 @@ body {
     }
 }
 
+.videos {
+    &__top {
+    }
+    &__title {
+        margin: 0 0 79px 0;
+    }
+    &__text {
+        width: 1214px;
+        margin: 0 auto 93px auto;
+    }
+    &__bottom {
+        display: flex;
+    }
+    &__list {
+    }
+    .list {
+        height: 594px;
+        display: flex;
+        margin: 0 auto;
+        &__image {
+            min-width: 197px;
+            height: 113px;
+        }
+        &__item {
+            padding: 15px;
+            displaY: flex;
+            transition: background-color 0.3s ease;
+            &.active,
+            &:hover {
+                background-color: #efefef;
+                cursor: pointer;
+            }
+        }
+        &__left {
+            
+        }
+        &__right {
+            overflow-y: scroll;
+            height: 603px;
+            width: 547px;
+            padding: 0 15px;
+        }
+        &__text {
+            padding: 0 0 0 18px;
+            align-self: center;
+        }
+        &__time {
+            opacity: 0.7;
+            color: #091e40;
+            font-family: "Nunito Sans";
+            font-size: 20px;
+        }
+        &__title {
+            color: #091e40;
+            font-family: "Nunito Sans";
+            font-size: 26px;
+            font-weight: 600;
+            display: block;
+            margin: 0 0 11px 0;
+        }
+        &__video {
+            width: 1072px;
+        }
+    }
+}

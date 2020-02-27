@@ -46,6 +46,26 @@ $(document).ready(function(){
 
 //videoplayer
 $(".list__item").click(function(){
-	$(".list__video").attr("src", "videos/" + $(this).attr("data-video"));
-	$(".list__video").attr("poster", "images/videos/" + $(this).attr("data-poster")); 
+	let video = $(this).attr("data-video");
+	let poster = $(this).attr("data-poster");
+	let title = $(this).find(".list__title").text();
+	let time = $(this).find(".list__time").text();
+	$(".list__video").attr("src", "videos/" + video);
+	$(".list__video").attr("poster", "images/videos/" + poster);
+	$(".list__panel-title").text(title);
+	$(".list__panel-time").text(time);
+	if ($(this) != $(".list__item.active")) {
+		$('.list__video').removeAttr("controls", "controls");
+		$(".list__panel").removeClass("hidden");
+	}
+	$(".list__item.active").removeClass("active");
+	$(this).addClass("active");
+});
+$(".list__left").click(function(){
+	if ($(".list__panel").attr("class").search("hidden") == -1) {
+		$(".list__panel").addClass("hidden");
+		$('.list__video').attr("controls", "controls");
+		let videoplayer = $('.list__video').get(0);
+		videoplayer.paused ? videoplayer.play() : videoplayer.pause();
+	}
 });

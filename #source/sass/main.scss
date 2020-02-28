@@ -93,6 +93,20 @@ body {
 }
 /*--------*/
 
+::-webkit-calendar-picker-indicator {
+    transition: color 0.3s ease;
+    margin: 0 10px 0;
+    flex-shrink: 0;
+    &:active, &:hover {
+        background-color: #0000;
+        color: #3984f3;
+    }
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
 .header {
     margin: 71px 0 95px 0;
     @media (max-width: 767px) {
@@ -556,6 +570,7 @@ body {
 }
 
 .reviews {
+    margin: 0 0 311px 0;
     &__title {
         margin: 0 0 105px 0;
     }
@@ -609,6 +624,92 @@ body {
             line-height: 50px;
             text-align: center;
             margin: 0 0 75px 0;
+        }
+    }
+}
+
+.booking {
+    background: url("../images/booking/bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    min-height: 899px;
+    display: flex;
+    .container {
+        align-self: center;
+    }
+    &__top {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin: 0 0 82px 0;
+    }
+    &__title-1 {
+        font-size: 39px;
+        font-weight: 600;
+        margin: 0 0 32px 0;
+        @media(max-width: 767px) {
+            font-size: 29px;
+        }
+    }
+    &__title-2 {
+        font-size: 60px;
+        font-weight: 800;
+        @media(max-width: 767px) {
+            font-size: 40px;
+        }
+    }
+    &__bottom {
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        @media(max-width: 1194px) {
+            flex-direction: column;
+        }
+    }
+    input {
+        width: 348px;
+        margin: 0 55px 0 0;
+        &:last-child {
+            margin: 0;
+        }
+        @media(max-width: 1586px) {
+            width: 250px;
+        }
+        @media(max-width: 1194px) {
+            margin: 0 0 25px 0;
+            width: 100%;
+        }
+    }
+    .input {
+        background-color: #fff3;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.22px;
+        height: 69px;
+        padding: 0 0 0 40px;
+        color: #ffffff;
+        &::placeholder {
+            color: #ffffff;
+        }
+    }
+    &__destinations {
+    }
+    &__packages {
+    }
+    &__date {
+    }
+    &__submit {
+        height: 69px;
+        background-color: #3984f3;
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.22px;
+        color: #ffffff;
+        transition: background-color 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            background-color: #234982;
         }
     }
 }

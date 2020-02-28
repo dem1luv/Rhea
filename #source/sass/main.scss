@@ -539,7 +539,8 @@ body {
             width: 472px;
             height: 500px;
             margin: 59px 17px;
-            transition: margin 0.3s ease;
+            transition: margin 0.3s ease,
+                        box-shadow 0.3s ease;
             position: relative;
             display: flex;
             background: url("../images/travel/01.png") 100% 100% no-repeat;
@@ -709,6 +710,78 @@ body {
         transition: background-color 0.3s ease;
         &:hover {
             cursor: pointer;
+            background-color: #234982;
+        }
+    }
+}
+
+.footer {
+    padding: 75px 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    &__links {
+        align-self: center;
+        margin: 0 0 37px 0;
+    }
+    &__link {
+        display: inline-block;
+        margin: 0 45px 0 0;
+        &:last-child {
+            margin: 0;
+        }
+        @media (max-width: 791px) {
+            margin: 0 30px 0 0;
+        }
+        @media (max-width: 767px) {
+            display: block;
+            text-align: center;
+            margin: 0 0 10px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        a {
+            color: #2b323a;
+            font-size: 18px;
+            transition: color 0.3s ease;
+            &:hover {
+                color: #4497f3;
+            }
+        }
+    }
+    &__copyright {
+        align-self: center;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 0 0 25px 0;
+        span:nth-child(1) {
+            color: #2b323a;
+        }
+        span:nth-child(2) {
+            color: #c6c6c6;
+        }
+    }
+    &__socials {
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 47px;
+        height: 47px;
+        background-color: #3984f3;
+        border-radius: 50%;
+        transition: background-color 0.3s ease;
+        margin: 0 23px 0 0;
+        &:last-child {
+            margin: 0;
+        }
+        &:hover {
             background-color: #234982;
         }
     }

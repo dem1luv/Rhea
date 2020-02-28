@@ -80,3 +80,13 @@ $(".list__left").click(function(){
 		videoplayer.paused ? videoplayer.play() : videoplayer.pause();
 	}
 });
+
+//anchors
+$(document).ready(function(){
+    $(".menu__box,.header__nav,.footer__links,.home__button-container,.places__button-container").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});

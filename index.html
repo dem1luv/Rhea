@@ -23,11 +23,11 @@
             <div class="menu__logo"><a href=""><img src="images/header/logo.png" alt=""></a></div>
             </div>
             <ul class="menu__box">
-                <li><a class="menu__item" href="#">Sign In</a></li>
-                <li><a class="menu__item" href="#">Home</a></li>
-                <li><a class="menu__item" href="#">Video</a></li>
-                <li><a class="menu__item" href="#">Destinations</a></li>
-                <li><a class="menu__item" href="#">Booking</a></li>
+                <li><a class="menu__item" href="#booking">Sign In</a></li>
+                <li><a class="menu__item" href="#home">Home</a></li>
+                <li><a class="menu__item" href="#video">Video</a></li>
+                <li><a class="menu__item" href="#destinations">Destinations</a></li>
+                <li><a class="menu__item" href="#booking">Booking</a></li>
             </ul>
         </div>
         <header class="header">
@@ -35,20 +35,20 @@
                 <div class="header__logo"><a href="#"><img src="images/header/logo.png" alt=""></a></div>
                 <nav class="header__nav">
                     <ul>
-                        <li class="header__item"><a class="header__link" href="#">Home</a></li><!--
-                     --><li class="header__item"><a class="header__link" href="#">Video</a></li><!--
-                     --><li class="header__item"><a class="header__link" href="#">Destinations</a></li><!--
-                     --><li class="header__item"><a class="header__link" href="#">Booking</a></li><!--
-                     --><li class="header__item"><a class="sign-in a" href="#">Sign In</a></li>
+                        <li class="header__item"><a class="header__link" href="#home">Home</a></li><!--
+                     --><li class="header__item"><a class="header__link" href="#video">Video</a></li><!--
+                     --><li class="header__item"><a class="header__link" href="#destinations">Destinations</a></li><!--
+                     --><li class="header__item"><a class="header__link" href="#booking">Booking</a></li><!--
+                     --><li class="header__item"><a class="sign-in a" href="#booking">Sign In</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div class="home">
+        <div class="home" id="home">
             <div class="container">
                 <h1 class="home__title">Travel around the world</h1>
                 <p class="home__text text">Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration from us.</p>
-                <p><a href="#" class="home__button sign-in b">Sign Up Now</a></p>
+                <p class="home__button-container"><a href="#booking" class="home__button sign-in b">Sign Up Now</a></p>
             </div>
         </div>
         <div class="places">
@@ -168,11 +168,11 @@
                 <div class="places__right">
                     <h2 class="places__title title">Amazing places to enjoy your travel</h2>
                     <p class="places__text text">Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra dui, varius vehicula ligula nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam ultrices nec. Cras nulla mauris, fermentum nec libero in.</p>
-                    <p class="places__button-container"><a href="#" class="places__button sign-in b">Explore</a></p>
+                    <p class="places__button-container"><a href="#booking" class="places__button sign-in b">Explore</a></p>
                 </div>
             </div>
         </div>
-        <div class="videos">
+        <div class="videos" id="video">
             <div class="container">
                 <div class="videos__top">
                     <h2 class="videos__title title">Featured videos</h2>
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </div>
-        <div class="travel">
+        <div class="travel" id="destinations">
             <div class="travel__top">
                 <div class="container">
                     <h2 class="travel__title title">Travel categories</h2>
@@ -309,7 +309,7 @@
                 </div>
             </div>
         </div>
-        <div class="booking">
+        <div class="booking" id="booking">
             <div class="container">
                 <div class="booking__top">
                     <h2 class="booking__title-1">We will se you</h2>
@@ -352,10 +352,10 @@
         <footer class="footer">
             <div class="container">
                 <ul class="footer__links">
-                    <li class="footer__link"><a href="#">Home</a></li><!--
-                 --><li class="footer__link"><a href="#">Video</a></li><!--
-                 --><li class="footer__link"><a href="#">Destinations</a></li><!--
-                 --><li class="footer__link"><a href="#">Booking</a></li><!--
+                    <li class="footer__link"><a href="#home">Home</a></li><!--
+                 --><li class="footer__link"><a href="#video">Video</a></li><!--
+                 --><li class="footer__link"><a href="#destinations">Destinations</a></li><!--
+                 --><li class="footer__link"><a href="#booking">Booking</a></li><!--
                  --><li class="footer__link"><a href="#">Contact</a></li><!--
                  --><li class="footer__link"><a href="#">Pricing</a></li><!--
                  --><li class="footer__link"><a href="#">Privacy Policy</a></li>
@@ -364,10 +364,10 @@
                     <span>Copyright 2014 - 2018</span> <span>Rhea - Travel Around The World</span>
                 </div>
                 <div class="footer__socials">
-                    <a href="#" class="footer__social"><img src="images/footer/01.png" alt=""></a>
-                    <a href="#" class="footer__social"><img src="images/footer/02.png" alt=""></a>
-                    <a href="#" class="footer__social"><img src="images/footer/03.png" alt=""></a>
-                    <a href="#" class="footer__social"><img src="images/footer/04.png" alt=""></a>
+                    <a href="#" class="footer__social" target="_blank"><img src="images/footer/01.png" alt=""></a>
+                    <a href="#" class="footer__social" target="_blank"><img src="images/footer/02.png" alt=""></a>
+                    <a href="#" class="footer__social" target="_blank"><img src="images/footer/03.png" alt=""></a>
+                    <a href="#" class="footer__social" target="_blank"><img src="images/footer/04.png" alt=""></a>
                 </div>
             </div>
         </footer>

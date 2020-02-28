@@ -83,10 +83,18 @@ $(".list__left").click(function(){
 
 //anchors
 $(document).ready(function(){
-    $(".menu__box,.header__nav,.footer__links,.home__button-container,.places__button-container").on("click","a", function (event) {
+    $(".header__nav,.footer__links,.home__button-container,.places__button-container").on("click","a", function (event) {
         event.preventDefault();
-        var id  = $(this).attr('href'),
+        let id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
-    });
+	});
+	$(".menu__box").on("click","a", function (event) {
+		event.preventDefault();
+		let id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('.menu__box,.menu__button').removeClass('active');
+		$('body').removeClass('lock');
+		$('body,html').animate({scrollTop: top}, 1500);
+	})
 });

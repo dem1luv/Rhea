@@ -86,8 +86,9 @@ $(document).ready(function(){
     $(".header__nav,.footer__links,.home__button-container,.places__button-container").on("click","a", function (event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
+			top = $(id).offset().top;
+		top -= screen.width < 768 ? 58 : 0;
+		$('body,html').animate({scrollTop: top}, 1500);
 	});
 	$(".menu__box").on("click","a", function (event) {
 		event.preventDefault();
@@ -95,6 +96,6 @@ $(document).ready(function(){
 			top = $(id).offset().top;
 		$('.menu__box,.menu__button').removeClass('active');
 		$('body').removeClass('lock');
-		$('body,html').animate({scrollTop: top}, 1500);
+		$('body,html').animate({scrollTop: top - 58}, 1500);
 	})
 });

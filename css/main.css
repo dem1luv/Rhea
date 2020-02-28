@@ -630,11 +630,11 @@ body.lock {
   transition: margin 0.5s ease;
 }
 
-.places .slider__item.slick-center[tabindex="0"] {
+.places .slider__item.slick-center {
   margin: 0 19px;
 }
 
-.places .slider__item.slick-center[tabindex="0"] .slider__bottom {
+.places .slider__item.slick-center .slider__bottom {
   opacity: 1;
 }
 
@@ -1109,12 +1109,12 @@ body.lock {
   }
 }
 
-.travel .slider__item.slick-center[tabindex="0"] {
+.travel .slider__item.slick-center {
   margin: 0 17px;
 }
 
 @media (max-width: 479px) {
-  .travel .slider__item.slick-center[tabindex="0"] {
+  .travel .slider__item.slick-center {
     margin: 0 8px;
   }
 }

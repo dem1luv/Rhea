@@ -204,6 +204,22 @@ body {
         @media (max-width: 1492px) {
             margin: 0 auto 25px auto;
         }
+        .slick-slide {
+            margin: 73px 19px 0 19px;
+            min-width: 372px;
+            transition: margin 0.5s ease;
+            @media(max-width: 509px) {
+                min-width: 0;
+                width: 240px;
+                margin: 73px 19px 0 19px;
+            }
+            &.slick-center {
+                margin: 0 19px;
+                .slider__bottom {
+                    opacity: 1;
+                }
+            }
+        }
         .slick-prev {
             bottom: -48px;
             left: 352px;
@@ -218,22 +234,6 @@ body {
             @media(max-width: 1492px) {
                 left: calc(50% + 32px);
                 bottom: -20px;
-            }
-        }
-        &__item {
-            margin: 73px 19px 0 19px;
-            min-width: 372px;
-            transition: margin 0.5s ease;
-            &.slick-center {
-                margin: 0 19px;
-                .slider__bottom {
-                    opacity: 1;
-                }
-            }
-            @media(max-width: 509px) {
-                min-width: 0;
-                width: 240px;
-                margin: 73px 19px 0 19px;
             }
         }
         &__block {
@@ -493,29 +493,13 @@ body {
     .slider {
         max-width: 1920px;
         margin: 0 auto;
-        .slick-prev {
-            left: calc(50% - 75px);
-            bottom: -54px;
-            @media(max-width: 767px) {
-                bottom: -35px;
-            }
-        }
-        .slick-next {
-            left: calc(50% + 32px);
-            bottom: -54px;
-            @media(max-width: 767px) {
-                bottom: -35px;
-            }
-        }
-        &__item {
-            width: 472px;
+        .slick-slide {
+            min-width: 472px;
             height: 500px;
             margin: 59px 17px;
             transition: margin 0.3s ease,
                         box-shadow 0.3s ease;
             position: relative;
-            display: flex;
-            background: url("../images/travel/01.png") 100% 100% no-repeat;
             @media(max-width: 599px) {
                 min-width: 0;
                 width: 360px;
@@ -532,11 +516,30 @@ body {
                 }
             }
         }
+        .slick-prev {
+            left: calc(50% - 75px);
+            bottom: -54px;
+            @media(max-width: 767px) {
+                bottom: -35px;
+            }
+        }
+        .slick-next {
+            left: calc(50% + 32px);
+            bottom: -54px;
+            @media(max-width: 767px) {
+                bottom: -35px;
+            }
+        }
         &__text {
             color: #ffffff;
             font-size: 28px;
             align-self: flex-end;
             margin: 0 41px 35px 41px;
+        }
+        &__item {
+            display: flex !important;
+            height: 500px;
+            background: url("../images/travel/01.png") 100% 100% no-repeat;
         }
     }
 }
@@ -571,7 +574,7 @@ body {
             margin: 0 0 35px;
         }
         &__item {
-            display: flex;
+            display: flex !important;
             align-items: center;
             flex-direction: column;
         }

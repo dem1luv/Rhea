@@ -41,17 +41,20 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true,
+		centerPadding: '0',
 	});
 	$('.travel__slider').slick({
 		sslidesToShow: 5,
 		slidesToScroll: 1,
 		centerMode: true,
 		variableWidth: true,
+		centerPadding: '0',
 	});
 	$('.reviews__slider').slick({
 		sslidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
+		centerPadding: '0',
 	});
 });
 

@@ -86,7 +86,7 @@ $(".list__left").click(function(){
 
 //anchors
 $(document).ready(function(){
-    $(".header__nav,.footer__links,.home__button-container,.places__button-container").on("click","a", function (event) {
+    $(".header__nav,.header__logo,.menu__logo,.footer__links,.home__button-container,.places__button-container").on("click","a", function (event) {
         event.preventDefault();
         let id  = $(this).attr('href'),
 			top = $(id).offset().top;

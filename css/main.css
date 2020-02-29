@@ -1115,6 +1115,12 @@ body.lock {
   background: url("../images/travel/01.png") 100% 100% no-repeat;
 }
 
+@media (max-width: 479px) {
+  .travel .slider__item {
+    height: 350px;
+  }
+}
+
 .reviews {
   margin: 0 0 311px 0;
 }

@@ -540,6 +540,9 @@ body {
             display: flex !important;
             height: 500px;
             background: url("../images/travel/01.png") 100% 100% no-repeat;
+            @media(max-width: 479px) {
+                height: 350px;
+            }
         }
     }
 }

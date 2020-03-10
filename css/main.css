@@ -12,23 +12,32 @@
 @media (max-width: 767px) {
   .hamburger-menu {
     display: block;
+    padding: 0;
   }
 }
 
 .menu__button {
+  background-color: #CFD8DC;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 16px;
   left: 20px;
-  width: 26px;
-  height: 26px;
   cursor: pointer;
   z-index: 1;
+}
+
+.menu__button span {
+  width: 50% !important;
+  display: block !important;
 }
 
 .menu__button.active > span {

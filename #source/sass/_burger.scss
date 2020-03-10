@@ -8,21 +8,25 @@
   z-index: 50;
   @media (max-width: 767px) {
     display: block;
+    padding: 0;
   }
 }
 .menu {
   &__button {
+    background-color: #CFD8DC;
+    padding: 25px;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: fixed;
     top: 16px;
     left: 20px;
-  
-    width: 26px;
-    height: 26px;
-  
     cursor: pointer;
     z-index: 1;
+    span {
+      width: 50% !important;
+      display: block !important;
+    }
     &.active > span {
       transform: rotate(45deg);
     }
@@ -38,7 +42,7 @@
   &__logo {
     display: flex;
     justify-content: center;
-  } 
+  }
   &__button > span,
   &__button > span::before,
   &__button > span::after {

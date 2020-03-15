@@ -46,8 +46,9 @@ body {
         &:hover {
             background-color: #234982;
         }
-        @media(max-width: 528px) {
+        @media(max-width: 767px) {
             width: 100%;
+            text-align: center;
         }
     }
 }
@@ -57,6 +58,10 @@ body {
     font-size: 22px;
     line-height: 42px;
     text-align: center;
+    @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 30px;
+    }
 }
 
 .title {
@@ -65,6 +70,10 @@ body {
     font-weight: 600;
     line-height: 62px;
     text-align: center;
+    @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
     &:after {
         bottom: -34px;
         left: calc(50% - 39px);
@@ -153,19 +162,36 @@ body {
 .home {
     background: url("../images/home/01.png") 100% 100% no-repeat;
     margin: 0 0 163px 0;
+    @media (max-width: 1023px) {
+        background-size: 60%;
+        background-position: 100% 50%;
+    }
+    @media (max-width: 767px) {
+        background: none;
+        margin: 0 0 100px 0;
+    }
     .container {
         height: 998px;
         display: flex;
         justify-content: center;
         align-content: flex-end;
         flex-direction: column;
-
+        @media(max-width: 1023px) {
+            justify-content: flex-start;
+            height: auto;
+            
+        }
     }
     &__text {
         max-width: 459px;
         line-height: 35px;
         margin: 0 0 93px 0;
         text-align: left;
+        @media(max-width: 767px) {
+            max-width: 100%;
+            text-align: center;
+            margin: 0 0 40px;
+        }
     }
     &__title {
         max-width: 514px;
@@ -173,17 +199,20 @@ body {
         font-size: 75px;
         font-weight: 800;
         margin: 0 0 54px 0;
-        @media(max-width: 528px) {
-            font-size: 50px;
-        }
-        @media(max-width: 367px) {
-            font-size: 42px;
+        @media(max-width: 767px) {
+            max-width: 100%;
+            text-align: center;
+            margin: 0 0 40px;
+            font-size: 46px;
         }
     }
 }
 
 .places {
     margin: 0 0 254px 0;
+    @media (max-width: 767px) {
+        margin: 0 0 132px 0;
+    }
     .container {
         display: flex;
         @media(max-width: 1492px) {
@@ -344,6 +373,9 @@ body {
 
 .videos {
     margin: 0 0 251px 0;
+    @media (max-width: 767px) {
+        margin: 0 0 100px 0;
+    }
     &__title {
         margin: 0 0 79px 0;
     }
@@ -477,6 +509,9 @@ body {
 
 .travel {
     margin: 0 0 303px 0;
+    @media (max-width: 767px) {
+        margin: 0 0 140px 0;
+    }
     &__top {
         margin: 0 0 110px 0;
         @media(max-width: 599px) {
@@ -549,6 +584,9 @@ body {
 
 .reviews {
     margin: 0 0 311px 0;
+    @media (max-width: 767px) {
+        margin: 0 0 100px 0;
+    }
     &__title {
         margin: 0 0 105px 0;
     }
@@ -597,6 +635,10 @@ body {
             line-height: 50px;
             text-align: center;
             margin: 0 0 75px 0;
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: 30px;
+            }
         }
     }
 }
@@ -606,6 +648,11 @@ body {
     background-size: cover;
     min-height: 899px;
     display: flex;
+    @media (max-width: 767px) {
+        height: auto;
+        min-height: 0;
+        padding: 50px 0;
+    }
     .container {
         align-self: center;
     }
@@ -615,6 +662,9 @@ body {
         letter-spacing: 1px;
         color: #ffffff;
         margin: 0 0 82px 0;
+        @media(max-width: 767px) {
+            margin: 0 0 40px 0;
+        }
     }
     &__title-1 {
         font-size: 39px;
@@ -681,6 +731,9 @@ body {
 
 .footer {
     padding: 75px 0;
+    @media(max-width: 767px) {
+        padding: 40px 0;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -688,23 +741,18 @@ body {
     &__links {
         align-self: center;
         margin: 0 0 37px 0;
+        @media(max-width: 767px) {
+            margin: 0 0 20px 0;
+        }
     }
     &__link {
         display: inline-block;
-        margin: 0 45px 0 0;
-        &:last-child {
-            margin: 0;
-        }
+        margin: 0 0 0 22.5px;
         @media (max-width: 791px) {
-            margin: 0 30px 0 0;
+            margin: 0 0 0 15px;
         }
         @media (max-width: 767px) {
-            display: block;
-            text-align: center;
-            margin: 0 0 10px 0;
-            &:last-child {
-                margin: 0;
-            }
+            margin: 0 0 10px 15px;
         }
         a {
             color: #2b323a;

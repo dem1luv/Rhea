@@ -368,9 +368,10 @@ body.lock {
   background-color: #234982;
 }
 
-@media (max-width: 528px) {
+@media (max-width: 767px) {
   .sign-in.b {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -381,12 +382,26 @@ body.lock {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
 .title {
   color: #091e40;
   font-size: 50px;
   font-weight: 600;
   line-height: 62px;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 .title:after {
@@ -512,6 +527,20 @@ body.lock {
   margin: 0 0 163px 0;
 }
 
+@media (max-width: 1023px) {
+  .home {
+    background-size: 60%;
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    background: none;
+    margin: 0 0 100px 0;
+  }
+}
+
 .home .container {
   height: 998px;
   display: -webkit-box;
@@ -528,11 +557,28 @@ body.lock {
           flex-direction: column;
 }
 
+@media (max-width: 1023px) {
+  .home .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+  }
+}
+
 .home__text {
   max-width: 459px;
   line-height: 35px;
   margin: 0 0 93px 0;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .home__text {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 0 40px;
+  }
 }
 
 .home__title {
@@ -543,20 +589,23 @@ body.lock {
   margin: 0 0 54px 0;
 }
 
-@media (max-width: 528px) {
+@media (max-width: 767px) {
   .home__title {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 367px) {
-  .home__title {
-    font-size: 42px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 46px;
   }
 }
 
 .places {
   margin: 0 0 254px 0;
+}
+
+@media (max-width: 767px) {
+  .places {
+    margin: 0 0 132px 0;
+  }
 }
 
 .places .container {
@@ -818,6 +867,12 @@ body.lock {
   margin: 0 0 251px 0;
 }
 
+@media (max-width: 767px) {
+  .videos {
+    margin: 0 0 100px 0;
+  }
+}
+
 .videos__title {
   margin: 0 0 79px 0;
 }
@@ -1026,6 +1081,12 @@ body.lock {
   margin: 0 0 303px 0;
 }
 
+@media (max-width: 767px) {
+  .travel {
+    margin: 0 0 140px 0;
+  }
+}
+
 .travel__top {
   margin: 0 0 110px 0;
 }
@@ -1134,6 +1195,12 @@ body.lock {
   margin: 0 0 311px 0;
 }
 
+@media (max-width: 767px) {
+  .reviews {
+    margin: 0 0 100px 0;
+  }
+}
+
 .reviews__title {
   margin: 0 0 105px 0;
 }
@@ -1206,6 +1273,13 @@ body.lock {
   margin: 0 0 75px 0;
 }
 
+@media (max-width: 767px) {
+  .reviews .slider__text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
 .booking {
   background: url("../images/booking/bg.jpg") 50% 50% no-repeat;
   background-size: cover;
@@ -1213,6 +1287,14 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .booking {
+    height: auto;
+    min-height: 0;
+    padding: 50px 0;
+  }
 }
 
 .booking .container {
@@ -1227,6 +1309,12 @@ body.lock {
   letter-spacing: 1px;
   color: #ffffff;
   margin: 0 0 82px 0;
+}
+
+@media (max-width: 767px) {
+  .booking__top {
+    margin: 0 0 40px 0;
+  }
 }
 
 .booking__title-1 {
@@ -1337,6 +1425,12 @@ body.lock {
   padding: 75px 0;
 }
 
+@media (max-width: 767px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1354,29 +1448,26 @@ body.lock {
   margin: 0 0 37px 0;
 }
 
-.footer__link {
-  display: inline-block;
-  margin: 0 45px 0 0;
+@media (max-width: 767px) {
+  .footer__links {
+    margin: 0 0 20px 0;
+  }
 }
 
-.footer__link:last-child {
-  margin: 0;
+.footer__link {
+  display: inline-block;
+  margin: 0 0 0 22.5px;
 }
 
 @media (max-width: 791px) {
   .footer__link {
-    margin: 0 30px 0 0;
+    margin: 0 0 0 15px;
   }
 }
 
 @media (max-width: 767px) {
   .footer__link {
-    display: block;
-    text-align: center;
-    margin: 0 0 10px 0;
-  }
-  .footer__link:last-child {
-    margin: 0;
+    margin: 0 0 10px 15px;
   }
 }
 
@@ -1444,4 +1535,3 @@ body.lock {
 .footer__social:hover {
   background-color: #234982;
 }
-/*# sourceMappingURL=main.css.map */

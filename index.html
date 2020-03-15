@@ -315,7 +315,7 @@
                 </div>
                 <div class="booking__bottom">
                     <form class="booking__form" action="#" method="get">
-                        <input class="booking__destinations input" list="destinations_list" placeholder="Destinations" required><!--
+                        <input class="booking__destinations input" list="destinations_list" placeholder="Destinations" name="dest" required><!--
                      --><datalist id="destinations_list">
                             <option value="destination 1">
                             <option value="destination 2">
@@ -328,7 +328,7 @@
                             <option value="destination 9">
                             <option value="destination 10">
                         </datalist><!--
-                     --><input class="booking__packages input" list="packages" placeholder="Packages" required><!--
+                     --><input class="booking__packages input" list="packages" placeholder="Packages" name="pack" required><!--
                      --><datalist id="packages">
                             <option value="package 1">
                             <option value="package 2">
@@ -341,7 +341,7 @@
                             <option value="package 9">
                             <option value="package 10">
                         </datalist><!--
-                     --><input class="booking__date input" type="date" required><!--
+                     --><input class="booking__date input" placeholder="Date" type="text" onfocus="(this.type='date')" name="date"><!--
                      --><input class="booking__submit" type="submit" value="Book Now">
                     </form>
                 </div>

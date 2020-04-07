@@ -5,15 +5,17 @@
 @import "zerostyle";
 
 body {
-    font-family: "Nunito Sans";
     overflow-x: hidden;
     &.lock {
         overflow-y: hidden;
     }
+}
+
+.wrapper {
+    font-family: "Nunito Sans";
     @media (max-width: 767px) {
         padding: 128px 0;
     }
-    overflow-x: hidden;
 }
 
 .container {
@@ -738,8 +740,10 @@ body {
         display: flex;
         flex-direction: column;
     }
-    &__links {
+    &__nav {
         align-self: center;
+    }
+    &__links {
         margin: 0 0 37px 0;
         @media(max-width: 767px) {
             margin: 0 0 20px 0;
@@ -776,7 +780,6 @@ body {
         }
     }
     &__socials {
-        align-self: center;
         display: flex;
         flex-wrap: wrap;
     }

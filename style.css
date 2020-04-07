@@ -316,8 +316,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------*/
 body {
-  font-family: "Nunito Sans";
-  overflow-x: hidden;
   overflow-x: hidden;
 }
 
@@ -325,8 +323,12 @@ body.lock {
   overflow-y: hidden;
 }
 
+.wrapper {
+  font-family: "Nunito Sans";
+}
+
 @media (max-width: 767px) {
-  body {
+  .wrapper {
     padding: 128px 0;
   }
 }
@@ -1441,10 +1443,13 @@ body.lock {
           flex-direction: column;
 }
 
-.footer__links {
+.footer__nav {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.footer__links {
   margin: 0 0 37px 0;
 }
 
@@ -1500,8 +1505,6 @@ body.lock {
 }
 
 .footer__socials {
-  -ms-flex-item-align: center;
-      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

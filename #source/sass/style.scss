@@ -162,7 +162,7 @@ body {
 }
 
 .home {
-    background: url("../images/home/01.png") 100% 100% no-repeat;
+    background: url("images/home/01.png") 100% 100% no-repeat;
     margin: 0 0 163px 0;
     @media (max-width: 1023px) {
         background-size: 60%;
@@ -270,7 +270,7 @@ body {
         &__block {
             height: 500px;
             margin: 0 0 21px 0;
-            background: url("../images/places/03.png") 100% 100% no-repeat;
+            background: url("images/places/03.png") 100% 100% no-repeat;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
@@ -426,8 +426,8 @@ body {
             flex-direction: column;
             justify-content: flex-end;
             padding: 0 53px 29px 53px;
-            background: url("../images/videoplayer/play.svg") 50% 50% no-repeat,
-                        url("../images/videos/01.png") 100% 100% no-repeat;
+            background: url("images/videoplayer/play.svg") 50% 50% no-repeat,
+                        url("images/videos/01.png") 100% 100% no-repeat;
             @media(max-width: 412px) {
                 padding: 0 30px 20px 30px;
             }
@@ -576,7 +576,7 @@ body {
         &__item {
             display: flex !important;
             height: 500px;
-            background: url("../images/travel/01.png") 100% 100% no-repeat;
+            background: url("images/travel/01.png") 100% 100% no-repeat;
             @media(max-width: 479px) {
                 height: 350px;
             }
@@ -646,7 +646,7 @@ body {
 }
 
 .booking {
-    background: url("../images/booking/bg.jpg") 50% 50% no-repeat;
+    background: url("images/booking/bg.jpg") 50% 50% no-repeat;
     background-size: cover;
     min-height: 899px;
     display: flex;
